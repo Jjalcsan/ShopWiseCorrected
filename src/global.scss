@@ -24,3 +24,67 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000; /* Color de texto principal */
+    background-color: #F5F5DC ; /* Color de fondo */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #15a150; /* Color verde para el encabezado */
+    padding: 10px;
+    color: #fff; /* Color de texto para el encabezado */
+  }
+  
+  /* Botones */
+  button {
+    background-color: #15a150; /* Color verde para los botones */
+    color: #fff; /* Color de texto para los botones */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #15a150; /* Color verde para los enlaces */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    color: #000000; /* Color de texto para los títulos */
+  }
+  
+  /* Texto destacado */
+  .highlight {
+    color: #15a150; /* Color verde para el texto destacado */
+    font-weight: bold;
+  }
+  
+  /* Inputs y selects */
+  input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Mensajes de éxito o error */
+  .success-message {
+    color: #15a150; /* Color verde para mensajes de éxito */
+  }
+  
+  .error-message {
+    color: #e74c3c; /* Color rojo para mensajes de error */
+  }

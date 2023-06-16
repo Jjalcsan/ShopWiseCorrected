@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="div-usuario">
+	  <div class="div-saludo">
+		<h1>Bienvenido a tu cuenta, {{usuario}}</h1>
+		<h3>Gracias por comprar con nosotros</h3>
+	  </div>
+	  <div class="div-sesion">
+		<button class="sesion" (click)="cerrarSesion()">Cerrar Sesion</button>
+	  </div>
+	</div>
+	<div class="div-contenido">
+		<div class="div-titulo">
+			<h1>Aqui tienes tu factura</h1>
+		</div>
+		<div class="div-productos">
+			<table>
+				<tr>
+					<td>Usuario:</td>
+					<td class="usuariotd">{{usuario}}</td>
+				</tr>
+				<tr>
+					<td>Tipo de envio:</td>
+					<td>
+						<fieldset>
+							  <input type="radio" name="drone" value="Normal" value="normal" [(ngModel)]="opcionSeleccionada" checked>
+							  <label for="Normal">Normal 1.5$</label>
+							  <input type="radio" name="drone" value="Express" value="express" [(ngModel)]="opcionSeleccionada">
+							  <label for="Express">Express 3.0$</label>
+							  <input type="radio" name="drone" value="Urgente" value="urgente" [(ngModel)]="opcionSeleccionada">
+							  <label for="Urgente">Urgente 5.0$</label>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+
+			<button (click)="completarPedido(usuario, cantidad, precio, opcionSeleccionada)">Completar pedido</button>
+		</div>
+	</div>	
+  </div>

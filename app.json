@@ -1,0 +1,102 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nick": "Jota",
+      "contrasenia": "contraseña1",
+      "nombre": "Juan Pérez",
+      "pedidos": [
+        {
+          "unidades": 2,
+          "precio": 2.2,
+          "envio": "normal",
+          "id": 1
+        },
+        {
+          "unidades": 10,
+          "precio": 5.5,
+          "envio": "express",
+          "id": 2
+        },
+        {
+          "unidades": 5,
+          "precio": 15,
+          "envio": "urgente",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "nick": "pepe",
+      "contrasenia": "pepe1",
+      "nombre": "pepe",
+      "pedidos": [],
+      "id": 2
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Manzanas (1Kg)",
+      "precio": 2.99,
+      "src": "../../assets/apples.jpg",
+      "class": "apple"
+    },
+    {
+      "id": 2,
+      "nombre": "Leche (1L)",
+      "precio": 1.99,
+      "src": "../../assets/milk.png",
+      "class": "milk"
+    },
+    {
+      "id": 3,
+      "nombre": "Pan de trigo integral",
+      "precio": 2.49,
+      "src": "../../assets/bread.jpg",
+      "class": "bread"
+    },
+    {
+      "id": 4,
+      "nombre": "Huevos (12 u)",
+      "precio": 3.99,
+      "src": "../../assets/egg.jpeg",
+      "class": "egg"
+    },
+    {
+      "id": 5,
+      "nombre": "Pasta (500g)",
+      "precio": 1.79,
+      "src": "../../assets/pasta.jpg",
+      "class": "pasta"
+    },
+    {
+      "id": 6,
+      "nombre": "Pollo (1Kg)",
+      "precio": 5.99,
+      "src": "../../assets/chicken.jpeg",
+      "class": "chicken"
+    },
+    {
+      "id": 7,
+      "nombre": "Arroz (1Kg)",
+      "precio": 2.29,
+      "src": "../../assets/rice.jpg",
+      "class": "rice"
+    },
+    {
+      "id": 8,
+      "nombre": "Zanahorias (1Kg)",
+      "precio": 1.49,
+      "src": "../../assets/carrots.jpg",
+      "class": "carrot"
+    },
+    {
+      "id": 9,
+      "nombre": "Yogur (4 u)",
+      "precio": 2.79,
+      "src": "../../assets/yogur.jpg",
+      "class": "yogur"
+    }
+  ]
+}

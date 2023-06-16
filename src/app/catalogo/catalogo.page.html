@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="div-usuario">
+	  <div class="div-saludo">
+		<h1>Bienvenido a tu cuenta, {{usuario}}</h1>
+		<h3>Gracias por comprar con nosotros</h3>
+	  </div>
+	  <div class="div-sesion">
+		<button class="sesion" (click)="cerrarSesion()">Cerrar Sesion</button>
+	  </div>
+	</div>
+	<div class="div-contenido">
+		<div class="div-titulo">
+			<h1>Nuestra seleccion</h1>
+		</div>
+		<div class="div-productos">
+			<table>
+				<tr *ngFor="let producto of productos">
+					<td class="imgtd"><img [src]= "producto.src"></td>
+					<td class="nametd">{{ producto.nombre }}</td>
+					<td class="pricetd">{{ producto.precio }}$</td>
+					<td class="inputtd"><input [(ngModel)]="producto.class" placeholder="Cantidad" type="number" min="0"></td>
+				</tr>
+			</table>
+
+			<button (click)="calcularTotal()">Pasar a la factura</button>
+		</div>
+	</div>	
+  </div>

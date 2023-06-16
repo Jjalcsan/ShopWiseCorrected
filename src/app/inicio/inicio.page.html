@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="div-usuario">
+    <div class="div-saludo">
+      <h1>Bienvenido a tu cuenta, {{usuario}}</h1>
+      <h3>Gracias por comprar con nosotros</h3>
+    </div>
+    <div class="div-sesion">
+      <button class="sesion" (click)="cerrarSesion()">Cerrar Sesion</button>
+    </div>
+  </div>
+  <div class="div-contenido">
+    <h2>¿Quieres hacer un nuevo pedido?</h2>
+    <button (click)="navigateToCatalogo()">Nuevo pedido</button>
+    <!--La tabla solo aparecera si el usuario tiene pedidos hechos-->
+    <table *ngIf="pedidos!=0">
+      <tr>
+        <td><b>ID del pedido</b></td>
+        <td><b>Unidades en el pedido</b></td>
+        <td><b>Precio total</b></td>
+        <td><b>Método de envío</b></td>
+        <td><b>Borrar pedido</b></td>
+      </tr>
+      <tr *ngFor="let pedido of pedidos">
+        <td>{{pedido.id}}</td>
+        <td>{{pedido.unidades}}</td>
+        <td>{{pedido.precio}}</td>
+        <td>{{pedido.envio}}</td>
+        <td><button class="sesion" (click)="borrarPedido(pedido.id)">X</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

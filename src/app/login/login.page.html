@@ -1,0 +1,18 @@
+<div class="div-general">
+	<div class="image-div">
+    <img src="assets/loginBG.jpg">
+  </div>
+  <div class="login-div">
+    <div class="component-div">
+    <h1>Bienvenido a ShopWise</h1>
+    <h3>Compra inteligentemente, sin salir de casa.</h3>
+    <ion-input [(ngModel)]="usuario" label="Usuario:"></ion-input>
+    <ion-input [(ngModel)]="contra" label="Contraseña:" type="password"></ion-input>
+    <button (click)="login()">Acceder</button>
+    <a (click)="navigateToRegister()">¿No tienes cuenta? ¡Regístrate!</a>
+    </div>
+  </div>
+
+
+  
+</div>

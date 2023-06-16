@@ -1,0 +1,38 @@
+//Div general con un display flex para ordenar nuestros divs
+.div-general{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    //El div que contiene la imagen y que proporciones tendrá
+    .image-div{
+        width: 40%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    //El div que contiene el texto y los inputs para acceder
+    .login-div{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+    }
+}
+
+//Cambiamos el estilo de los inputs
+ion-input{
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+//Especificamos el tamaño de la imagen y como cubrirá el fondo
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

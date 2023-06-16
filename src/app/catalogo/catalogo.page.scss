@@ -1,0 +1,78 @@
+.container{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .div-usuario{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+        .div-saludo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px
+        };
+        .div-sesion{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px
+        }
+    };
+    .div-contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        .div-titulo{
+            display: flex;
+            justify-content: center;
+        };
+        .div-productos{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+h1, h3{
+    margin: 0px;
+}
+
+.sesion{
+    background-color: #e74c3c;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+table{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    td{
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
+    }
+}
+
+.nametd, .pricetd, .inputtd{
+    padding: 20px;
+}
+
+.inputtd{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
